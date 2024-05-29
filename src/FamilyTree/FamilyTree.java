@@ -10,8 +10,8 @@ import java.io.Serializable;
 
 
 public class FamilyTree<E extends FamilyTreeItem<E>> implements Serializable, Iterable<E> {
-    Integer humansId = 1;
-    List<E> familyTree = new ArrayList<>();
+    private Integer humansId = 1;
+    private List<E> familyTree = new ArrayList<>();
 
     public void setItem(E human){
         if (human.getId() == 0){

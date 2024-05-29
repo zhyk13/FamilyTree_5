@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Human implements Serializable, Comparable<Human>, FamilyTreeItem<Human> {
-    Integer id;
-    String name;
-    LocalDate birthDate, deathDate;
-    List<Human> children = new ArrayList<>();
-    Human father, mother;
-    Gender gender;
-    Human spouse;
+    private Integer id;
+    private String name;
+    private LocalDate birthDate, deathDate;
+    private List<Human> children = new ArrayList<>();
+    private Human father, mother;
+    private Gender gender;
+    private Human spouse;
 
     public void setId(Integer id){
         this.id = id;

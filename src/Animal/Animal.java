@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Animal implements Serializable, Comparable<Animal>, FamilyTreeItem<Animal> {
-    Integer id;
-    String name;
-    LocalDate birthDate, deathDate;
-    List<Animal> children = new ArrayList<>();
-    Animal father, mother;
-    Gender gender;
-    String breed;
+    private Integer id;
+    private String name;
+    private LocalDate birthDate, deathDate;
+    private List<Animal> children = new ArrayList<>();
+    private Animal father, mother;
+    private Gender gender;
+    private String breed;
 
     public void setId(Integer id){
         this.id = id;
